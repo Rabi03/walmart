@@ -1,6 +1,6 @@
 # walmart E-commerce Project
 
-> Complete E-commerce site built with <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node-dot-js&logoColor=white" />,<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />, <img src="https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white" />, <img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white" />, <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" />
+> Complete E-commerce site built with <img src="https://img.shields.io/badge/Node.js-43853D?style=plastic&logo=node-dot-js&logoColor=white" />,<img src="https://img.shields.io/badge/React-20232A?style=plastic&logo=react&logoColor=61DAFB" />, <img src="https://img.shields.io/badge/Redux-593D88?style=plastic&logo=redux&logoColor=white" />, <img src="https://img.shields.io/badge/Express.js-000000?style=plastic&logo=express&logoColor=white" />, <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=plastic&logo=mongodb&logoColor=white" />
 
 
 ### Env Variables
