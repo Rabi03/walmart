@@ -4,8 +4,6 @@ if(process.env.NODE_ENV !== 'production') require('dotenv').config({path:'backen
 const ConnectDatabase = require('../config/datadase');
 const products=require('../data/products.json')
 
-dotenv.config({path:'backend/config/info.env'})
-
 ConnectDatabase()
 
 const seedProducts=async(req,res,next)=>{

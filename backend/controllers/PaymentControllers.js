@@ -1,6 +1,5 @@
 if(process.env.NODE_ENV !== 'production') require('dotenv').config({path:'backend/config/info.env'})
 
-dotenv.config({path:'backend/config/info.env'})
 
 const stripe=require('stripe')(process.env.STRIPE_SECRET_KEY)
 

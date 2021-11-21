@@ -3,7 +3,6 @@ const Products=require('./routes/Product')
 const User=require('./routes/User')
 const Order=require('./routes/Order')
 const Payment=require('./routes/Payment')
-// const dotenv=require('dotenv');
 const cookieParser= require('cookie-parser')
 const bodyParser= require('body-parser')
 const cloudinary=require('cloudinary')
