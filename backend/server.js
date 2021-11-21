@@ -48,7 +48,7 @@ cloudinary.config({
 app.use(errorMiddleware)
 ConnectDatabase();
 
-const server=app.listen(5000,()=>console.log(`Server is running on Port: 5000`))
+const server=app.listen(process.env.PORT || 5000,()=>console.log(`Server is running on Port: 5000`))
 
 process.on('unhandledRejection',err=>{
     console.log(err)
