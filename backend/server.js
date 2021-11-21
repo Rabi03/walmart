@@ -8,6 +8,7 @@ const cookieParser= require('cookie-parser')
 const bodyParser= require('body-parser')
 const cloudinary=require('cloudinary')
 const fileUpload=require('express-fileupload')
+const path=require('path')
 
 
 process.on('uncaughtException', err=>{
@@ -31,6 +32,14 @@ app.use('/api/v1',Products)
 app.use('/api/v1',User)
 app.use('/api/v1',Order)
 app.use('/api/v1',Payment)
+
+if(process.env.NODE_ENV === 'PRODUCTION'){
+    app.use(express.static(path.join(__dirname, '../frontend/build')))
+
+    app.get('*',(req, res) =>{
+        res.sendFile(path.resolve(__dirname, '../frontend/build/index.html'))
+    })
+}
 
 cloudinary.config({ 
     cloud_name: process.env.CLOUD_NAME, 
