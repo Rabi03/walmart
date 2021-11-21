@@ -1,4 +1,4 @@
-const dotenv=require('dotenv');
+if(process.env.NODE_ENV !== 'production') require('dotenv').config({path:'backend/config/info.env'})
 
 dotenv.config({path:'backend/config/info.env'})
 

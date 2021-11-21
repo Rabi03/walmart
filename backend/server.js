@@ -3,7 +3,7 @@ const Products=require('./routes/Product')
 const User=require('./routes/User')
 const Order=require('./routes/Order')
 const Payment=require('./routes/Payment')
-const dotenv=require('dotenv');
+// const dotenv=require('dotenv');
 const cookieParser= require('cookie-parser')
 const bodyParser= require('body-parser')
 const cloudinary=require('cloudinary')
@@ -19,8 +19,7 @@ process.on('uncaughtException', err=>{
 
 const ConnectDatabase = require('./config/datadase');
 const errorMiddleware = require('./middleware/error');
-
-dotenv.config({path:'backend/config/info.env'})
+if(process.env.NODE_ENV !== 'production') require('dotenv').config({path:'backend/config/info.env'})
 
 const app=express();
 app.use(express.json())

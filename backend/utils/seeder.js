@@ -1,6 +1,6 @@
 const Product = require('../modals/product');
 
-const dotenv=require('dotenv');
+if(process.env.NODE_ENV !== 'production') require('dotenv').config({path:'backend/config/info.env'})
 const ConnectDatabase = require('../config/datadase');
 const products=require('../data/products.json')
 
